@@ -1,0 +1,10 @@
+Validation Rules
+Every row in the CSV must adhere to the following constraints. If any row fails, the entire upload will be rejected:
+
+txnId: Must be a unique string (no duplicates within the file).
+sender & receiver: Must be a single uppercase letter from A to T (e.g., A, B, C... T).
+Different Accounts: The sender and receiver cannot be the same account for a given transaction.
+amount: Must be a valid number strictly greater than zero.
+timestamp: Must be a valid Unix timestamp in seconds (integer).
+File Size: The CSV must contain between 1 and 500 transaction rows.
+
